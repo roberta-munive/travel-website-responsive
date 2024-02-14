@@ -1,7 +1,69 @@
-h1 {
+body {
+  /* background-color: #686a67; */
+  background-color: #74685d;
   font-family: "Poppins", sans-serif;
-  font-size: 96px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 144px;
 }
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* header section */
+
+header {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("../images/federico-di-dio-photography-K2YN6EjpvXY-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+  text-align: center;
+}
+
+header a {
+  background-color: #ccc1b4;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-block;
+  line-height: 1.5;
+  margin-top: 30px;
+  padding: 16px 32px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+header a:visited {
+  color: black;
+}
+
+header h1 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  line-height: 1.5;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+/* footer section */
