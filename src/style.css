@@ -5,6 +5,10 @@ body {
   font-style: normal;
 }
 
+html {
+  height: 100%;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -36,7 +40,7 @@ header a {
   text-decoration: none;
   text-align: center;
   text-transform: capitalize;
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 header a:visited {
@@ -67,3 +71,23 @@ header h3 {
 }
 
 /* footer section */
+
+@media (max-width: 900px) {
+  /* header{
+    padding: 120px 0;
+  } */
+
+  header h1 {
+    font-size: 48px;
+    line-height: 1;
+    margin: 15px 0;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+}
