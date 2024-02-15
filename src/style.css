@@ -16,7 +16,7 @@ html {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -100,16 +100,48 @@ footer h3 {
   line-height: 1.5;
 }
 
-.coded-by-me-statement{
+footer li a {
+  color: black;
+  opacity: 0.9;
+}
+
+footer li a:visited {
+  /* color: rgb(84, 54, 19); */
+  color: black;
+}
+
+footer ul,
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  list-style: none;
+  opacity: 0.9;
+  padding: 0;
+}
+
+footer .coded-by-me-statement {
   font-size: 12px;
   margin: 20px 0;
   opacity: 0.8;
   text-align: center;
 }
 
-.footer-grid {
+footer .coded-by-me-statement a:visited {
+  color: rgb(84, 54, 19);
+}
+
+footer .col {
+  margin-right: 20px;
+}
+
+footer .rightmost-col {
+  margin-right: 0;
+}
+
+footer .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media (max-width: 960px) {
