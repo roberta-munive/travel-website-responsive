@@ -1,12 +1,23 @@
+:root {
+  --theme-color-light: rgba(204, 193, 180);
+  --theme-color-medium: rgb(116, 104, 93);
+}
+
 body {
   /* background-color: #686a67; */
-  background-color: #74685d;
+  background-color: var(--theme-color-medium);
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
+/* have the content fill the entire height of the screen so there is no blank space at the bottom */
 html {
   height: 100%;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .container {
@@ -29,7 +40,7 @@ header {
 }
 
 header a {
-  background-color: #ccc1b4;
+  background-color: var(--theme-color-light);
   border-radius: 6px;
   font-size: 14px;
   font-weight: 700;
@@ -72,7 +83,36 @@ header h3 {
 
 /* footer section */
 
-@media (max-width: 900px) {
+footer {
+  background-image: linear-gradient(
+      rgba(204, 193, 180, 0.8),
+      rgba(204, 193, 180, 0.8)
+    ),
+    url("../images/pascal-plaumann-fEdJwXcLmP4-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 0;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.coded-by-me-statement{
+  font-size: 12px;
+  margin: 20px 0;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+@media (max-width: 960px) {
   /* header{
     padding: 120px 0;
   } */
