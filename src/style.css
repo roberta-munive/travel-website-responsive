@@ -3,6 +3,10 @@
   --theme-color-medium: rgb(116, 104, 93);
 }
 
+a:visited {
+  color: black;
+}
+
 body {
   /* background-color: #686a67; */
   background-color: var(--theme-color-medium);
@@ -20,7 +24,7 @@ html {
 section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 60px 30px;
 }
 
 .container {
@@ -28,6 +32,24 @@ section {
   margin: 0 auto;
 }
 
+.grid {
+  display: grid;
+  grid-gap: 40px;
+}
+
+.grid-2-equal-cols{
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-equal-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img-responsive{
+  /* height: auto; */
+  max-width: 100%;
+
+}
 /* header section */
 
 header {
@@ -45,6 +67,7 @@ header {
 header a {
   background-color: var(--theme-color-light);
   border-radius: 6px;
+  color: black;
   font-size: 14px;
   font-weight: 700;
   display: inline-block;
@@ -57,9 +80,7 @@ header a {
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-header a:visited {
-  color: black;
-}
+
 
 header h1 {
   font-size: 96px;
@@ -84,6 +105,41 @@ header h3 {
   text-transform: capitalize;
 }
 
+/* main section */
+
+main {
+  /* background-color: rgb(242, 230, 218);
+  background-color: rgb(242, 233, 222);
+  background-color: rgb(237, 227, 215); */
+  background-color: rgb(251, 236, 224);
+}
+
+main h2{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+main h3{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+
+main p{
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+  
+}
+
+
+.why-tuscany-section{
+  align-items: center;
+  vertical-align: middle;
+}
+
 /* footer section */
 
 footer {
@@ -95,7 +151,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  padding: 30px;
+  padding-bottom: 20px;
 }
 
 footer h3 {
@@ -137,17 +193,10 @@ footer .coded-by-me-statement a:visited {
   font-weight: bold;
 }
 
-footer .footer-grid {
-  display: grid;
-  grid-gap: 40px;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
 @media (max-width: 960px) {
   /* header{
     padding: 120px 0;
   } */
-
 
   header h1 {
     font-size: 48px;
@@ -172,8 +221,20 @@ footer .footer-grid {
     padding: 0 20px;
   }
 
-  footer .footer-grid {
+  main h2{
+    font-size: 28px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .grid {
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 12px;
+  }
+
+  .why-tuscany-section{
+    text-align: center;
   }
 }
