@@ -8,6 +8,8 @@ body {
   background-color: var(--theme-color-medium);
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 /* have the content fill the entire height of the screen so there is no blank space at the bottom */
@@ -18,6 +20,7 @@ html {
 section {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .container {
@@ -35,7 +38,7 @@ header {
     url("../images/federico-di-dio-photography-K2YN6EjpvXY-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 0;
+  padding: 200px 20px;
   text-align: center;
 }
 
@@ -91,7 +94,8 @@ footer {
     url("../images/pascal-plaumann-fEdJwXcLmP4-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10px 0;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 footer h3 {
@@ -128,7 +132,9 @@ footer .coded-by-me-statement {
 }
 
 footer .coded-by-me-statement a:visited {
-  color: rgb(84, 54, 19);
+  /* color: rgb(84, 54, 19); */
+  color: black;
+  font-weight: bold;
 }
 
 footer .col {
@@ -149,10 +155,11 @@ footer .footer-grid {
     padding: 120px 0;
   } */
 
+
   header h1 {
     font-size: 48px;
     line-height: 1;
-    margin: 15px 0;
+    margin: 15px 10px;
   }
 
   header h2 {
@@ -161,5 +168,22 @@ footer .footer-grid {
 
   header h3 {
     font-size: 12px;
+  }
+
+  footer {
+    padding: 10px;
+    text-align: center;
+  }
+
+  footer p {
+    padding: 0 20px;
+  }
+
+  footer .col {
+    margin-right: 0;
+  }
+
+  footer .footer-grid {
+    grid-template-columns: 1fr;
   }
 }
