@@ -137,16 +137,9 @@ footer .coded-by-me-statement a:visited {
   font-weight: bold;
 }
 
-footer .col {
-  margin-right: 20px;
-}
-
-footer .rightmost-col {
-  margin-right: 0;
-}
-
 footer .footer-grid {
   display: grid;
+  grid-gap: 40px;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -179,11 +172,8 @@ footer .footer-grid {
     padding: 0 20px;
   }
 
-  footer .col {
-    margin-right: 0;
-  }
-
   footer .footer-grid {
     grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
 }
