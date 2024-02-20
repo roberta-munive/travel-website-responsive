@@ -76,7 +76,7 @@ section.secondary-section {
 .img-responsive {
   /* height: auto; */
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 .text-centered {
@@ -151,6 +151,7 @@ main h2 {
   font-weight: 700;
   line-height: 1.5;
   margin: 10px 0;
+  text-transform: capitalize;
 }
 
 main h3 {
@@ -228,10 +229,14 @@ main p {
 }
 /* card image dimensions in Figma were 185px x 185px */
 
-/* .card-image {
-  max-height: 185px;
+.card-image {
+  min-height: 185px;
 
-} */
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
 
 /* footer section */
 
