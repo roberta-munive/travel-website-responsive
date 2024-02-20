@@ -1,15 +1,39 @@
 :root {
   --theme-color-light: rgba(204, 193, 180);
+  /* --theme-color-light: rgb(200, 188, 177); */
   --theme-color-medium: rgb(116, 104, 93);
+
+  /* --theme-color-dark-brown: rgb(68, 35, 13); */
+  /* --theme-color-medium-brown: rgb(159, 131, 108); /
+  --theme-color-light-brown: rgb(192, 173, 166);
+  --theme-color-light-gray: rgb(221, 214, 222);
+  --theme-color-medium-gray: rgb(196, 190, 202);
+
+  --theme-color-darkest-brown: rgb(125, 102, 85);
+  --theme-color-dark-brown: rgb(151, 132, 117);
+  --theme-color-medium-brown: rgb(177, 162, 149);
+  --theme-color-medium-light-brown: rgb(203, 193, 182);
+  /* --theme-color-light-brown: rgb(229, 223, 214); */
+  /* --theme-color-lightest-brown: rgb(255, 253, 246); */
+
+  --theme-color-dark-brown: rgb(139, 115, 96);
+  --theme-color-medium-brown: rgb(169, 153, 128);
+  --theme-color-light-brown: rgb(211, 190, 165);
+  --theme-color-lightest-brown: rgb(226, 217, 201);
+  --theme-color-light-gray: rgb(210, 210, 210);
+  --theme-color-lightest-gray: rgb(224, 222, 223);
 }
 
 a:visited {
   color: black;
 }
 
+/* color palette */
+
 body {
+  background-color: var(--theme-color-dark-brown);
   /* background-color: #686a67; */
-  background-color: var(--theme-color-medium);
+  /* background-color: var(--theme-color-medium); */
   font-family: "Poppins", sans-serif;
   font-style: normal;
   margin: 0;
@@ -22,9 +46,13 @@ html {
 }
 
 section {
-  max-width: 1100px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 60px 30px;
+  padding: 60px 100px;
+}
+
+section.secondary-section {
+  background-color: var(--theme-color-light-gray);
 }
 
 .container {
@@ -37,7 +65,7 @@ section {
   grid-gap: 40px;
 }
 
-.grid-2-equal-cols{
+.grid-2-equal-cols {
   grid-template-columns: 1fr 1fr;
 }
 
@@ -45,11 +73,16 @@ section {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.img-responsive{
+.img-responsive {
   /* height: auto; */
+  display: block;
   max-width: 100%;
-
 }
+
+.text-centered {
+  text-align: center;
+}
+
 /* header section */
 
 header {
@@ -65,22 +98,24 @@ header {
 }
 
 header a {
-  background-color: var(--theme-color-light);
+  /* background-color: var(--theme-color-light);
+  background-color: var(--theme-color-lightest-brown);
+  background-color: var(--theme-color-light-brown); */
+  background-color: var(--theme-color-light-gray);
   border-radius: 6px;
   color: black;
   font-size: 14px;
   font-weight: 700;
   display: inline-block;
+  letter-spacing: 2px;
   line-height: 1.5;
   margin-top: 30px;
   padding: 16px 32px;
   text-decoration: none;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
-
 
 header h1 {
   font-size: 96px;
@@ -108,37 +143,95 @@ header h3 {
 /* main section */
 
 main {
-  /* background-color: rgb(242, 230, 218);
-  background-color: rgb(242, 233, 222);
-  background-color: rgb(237, 227, 215); */
-  background-color: rgb(251, 236, 224);
+  background-color: var(--theme-color-lightest-gray);
 }
 
-main h2{
+main h2 {
   font-size: 40px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.5;
+  margin: 10px 0;
 }
 
-main h3{
+main h3 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
+  margin: 0;
   opacity: 0.5;
 }
 
-main p{
+main p {
   font-size: 16px;
   font-weight: 400;
   opacity: 0.7;
-  
 }
 
+/* Why Tuscany Section */
 
-.why-tuscany-section{
+.why-tuscany-section {
   align-items: center;
   vertical-align: middle;
 }
+
+/* Popular Attractions Section */
+
+.card {
+  background-color: var(--theme-color-lightest-gray);
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  margin: 30px 0;
+}
+
+.card h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.card h5 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.card-body {
+  padding: 24px 32px;
+}
+
+.card-btn {
+  background-color: rgba(139, 115, 96, 0.8);
+  border-radius: 6px;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+/* card image dimensions in Figma were 185px x 185px */
+
+/* .card-image {
+  max-height: 185px;
+
+} */
 
 /* footer section */
 
@@ -148,6 +241,7 @@ footer {
       rgba(204, 193, 180, 0.8)
     ),
     url("../images/pascal-plaumann-fEdJwXcLmP4-unsplash.jpg");
+
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -221,7 +315,7 @@ footer .coded-by-me-statement a:visited {
     padding: 0 20px;
   }
 
-  main h2{
+  main h2 {
     font-size: 28px;
   }
 
@@ -234,7 +328,7 @@ footer .coded-by-me-statement a:visited {
     grid-gap: 12px;
   }
 
-  .why-tuscany-section{
+  .why-tuscany-section {
     text-align: center;
   }
 }
