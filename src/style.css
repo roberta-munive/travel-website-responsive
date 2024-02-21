@@ -227,16 +227,17 @@ main p {
 .card-footer {
   padding: 0 30px 30px;
 }
-/* card image dimensions in Figma were 185px x 185px */
-
-.card-image {
-  min-height: 185px;
-
-}
 
 .card-header.grid {
   grid-gap: 0;
 }
+
+.embed-map, .card-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+/* Photo Gallery Section */
 
 /* footer section */
 
@@ -326,6 +327,10 @@ footer .coded-by-me-statement a:visited {
 
   section {
     padding: 30px;
+  }
+
+  .card-image{
+    display:none;
   }
 
   .grid {
