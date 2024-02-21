@@ -74,9 +74,9 @@ section.secondary-section {
 }
 
 .img-responsive {
-  /* height: auto; */
   display: block;
   width: 100%;
+
 }
 
 .text-centered {
@@ -173,6 +173,10 @@ main p {
 .why-tuscany-section {
   align-items: center;
   vertical-align: middle;
+}
+
+.why-tuscany-section .img-responsive{
+  aspect-ratio: 16 / 9;
 }
 
 /* Popular Attractions Section */
@@ -331,6 +335,10 @@ footer .coded-by-me-statement a:visited {
 
   .card-image{
     display:none;
+  }
+
+  .embed-map{
+    aspect-ratio: 16 / 9;
   }
 
   .grid {
