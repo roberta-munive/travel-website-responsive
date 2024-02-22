@@ -24,6 +24,10 @@
   --theme-color-lightest-gray: rgb(224, 222, 223);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a:visited {
   color: black;
 }
@@ -76,7 +80,6 @@ section.secondary-section {
 .img-responsive {
   display: block;
   width: 100%;
-
 }
 
 .text-centered {
@@ -175,7 +178,7 @@ main p {
   vertical-align: middle;
 }
 
-.why-tuscany-section .img-responsive{
+.why-tuscany-section .img-responsive {
   aspect-ratio: 16 / 9;
 }
 
@@ -236,12 +239,23 @@ main p {
   grid-gap: 0;
 }
 
-.embed-map, .card-image {
+.embed-map,
+.card-image {
   width: 100%;
   aspect-ratio: 1 / 1;
 }
 
 /* Photo Gallery Section */
+
+.photo-gallery-section {
+  margin: 0 auto;
+  padding: 60px;
+  overflow-x: auto;
+}
+
+.row {
+  margin-top: 20px;
+}
 
 /* footer section */
 
@@ -333,17 +347,25 @@ footer .coded-by-me-statement a:visited {
     padding: 30px;
   }
 
-  .card-image{
-    display:none;
+  .card-image {
+    display: none;
   }
 
-  .embed-map{
+  .embed-map {
     aspect-ratio: 16 / 9;
   }
 
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 12px;
+  }
+
+  .photo-gallery-section {
+    padding: 40px 20px;
+  }
+
+  .row {
+    margin-top: 20px;
   }
 
   .why-tuscany-section {
