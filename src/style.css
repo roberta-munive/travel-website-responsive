@@ -257,6 +257,7 @@ footer h3 {
 footer li a {
   color: black;
   opacity: 0.9;
+  text-transform: capitalize;
 }
 
 footer li a:hover {
@@ -266,6 +267,7 @@ footer li a:hover {
 
 footer li a:visited {
   color: black;
+  text-transform: capitalize;
 }
 
 footer ul,
@@ -286,6 +288,7 @@ footer .coded-by-me-statement {
 }
 
 footer .coded-by-me-statement a {
+  text-transform: capitalize;
   transition: all 150ms ease-in-out;
 }
 
@@ -296,6 +299,7 @@ footer .coded-by-me-statement a:hover {
 footer .coded-by-me-statement a:visited {
   color: black;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 @media (max-width: 960px) {
