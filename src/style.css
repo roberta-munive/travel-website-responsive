@@ -285,6 +285,14 @@ footer .coded-by-me-statement {
   text-align: center;
 }
 
+footer .coded-by-me-statement a {
+  transition: all 150ms ease-in-out;
+}
+
+footer .coded-by-me-statement a:hover {
+  text-transform: uppercase;
+}
+
 footer .coded-by-me-statement a:visited {
   color: black;
   font-weight: bold;
