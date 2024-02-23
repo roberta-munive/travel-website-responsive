@@ -283,6 +283,11 @@ footer li a {
   opacity: 0.9;
 }
 
+footer li a:hover{
+  text-transform: uppercase;
+  transition: all 150ms ease-in-out;
+}
+
 footer li a:visited {
   /* color: rgb(84, 54, 19); */
   color: black;
