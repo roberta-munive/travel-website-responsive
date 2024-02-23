@@ -1,20 +1,6 @@
 :root {
   --theme-color-light: rgba(204, 193, 180);
-  /* --theme-color-light: rgb(200, 188, 177); */
   --theme-color-medium: rgb(116, 104, 93);
-
-  /* --theme-color-dark-brown: rgb(68, 35, 13); */
-  /* --theme-color-medium-brown: rgb(159, 131, 108); /
-  --theme-color-light-brown: rgb(192, 173, 166);
-  --theme-color-light-gray: rgb(221, 214, 222);
-  --theme-color-medium-gray: rgb(196, 190, 202);
-
-  --theme-color-darkest-brown: rgb(125, 102, 85);
-  --theme-color-dark-brown: rgb(151, 132, 117);
-  --theme-color-medium-brown: rgb(177, 162, 149);
-  --theme-color-medium-light-brown: rgb(203, 193, 182);
-  /* --theme-color-light-brown: rgb(229, 223, 214); */
-  /* --theme-color-lightest-brown: rgb(255, 253, 246); */
 
   --theme-color-dark-brown: rgb(139, 115, 96);
   --theme-color-medium-brown: rgb(169, 153, 128);
@@ -24,6 +10,8 @@
   --theme-color-lightest-gray: rgb(224, 222, 223);
 }
 
+/* help prevent overflow */
+
 * {
   box-sizing: border-box;
 }
@@ -32,12 +20,8 @@ a:visited {
   color: black;
 }
 
-/* color palette */
-
 body {
   background-color: var(--theme-color-dark-brown);
-  /* background-color: #686a67; */
-  /* background-color: var(--theme-color-medium); */
   font-family: "Poppins", sans-serif;
   font-style: normal;
   margin: 0;
@@ -49,6 +33,7 @@ html {
   height: 100%;
 }
 
+/* make content of sections have a consistent indent */
 section {
   max-width: 100%;
   margin: 0 auto;
@@ -100,11 +85,8 @@ header {
   text-align: center;
 }
 
-header a {
-  /* background-color: var(--theme-color-light);
-  background-color: var(--theme-color-lightest-brown);
-  background-color: var(--theme-color-light-brown); */
-  background-color: var(--theme-color-light-gray);
+/* give link the appearance of a button */
+.generic-btn {
   border-radius: 6px;
   color: black;
   font-size: 14px;
@@ -112,12 +94,15 @@ header a {
   display: inline-block;
   letter-spacing: 2px;
   line-height: 1.5;
-  margin-top: 30px;
-  padding: 16px 32px;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+header a {
+  background-color: var(--theme-color-light-gray);
+  margin-top: 30px;
+  padding: 16px 32px;
 }
 
 header h1 {
@@ -186,7 +171,6 @@ main p {
 
 .card {
   background-color: var(--theme-color-lightest-gray);
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   margin: 30px 0;
@@ -217,18 +201,10 @@ main p {
 
 .card-btn {
   background-color: rgba(139, 115, 96, 0.8);
-  border-radius: 6px;
-  color: black;
-  font-size: 14px;
   font-weight: 700;
   display: block;
   letter-spacing: 3px;
-  line-height: 1.5;
   padding: 16px;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .card-footer {
@@ -283,13 +259,12 @@ footer li a {
   opacity: 0.9;
 }
 
-footer li a:hover{
+footer li a:hover {
   text-transform: uppercase;
   transition: all 150ms ease-in-out;
 }
 
 footer li a:visited {
-  /* color: rgb(84, 54, 19); */
   color: black;
 }
 
@@ -311,16 +286,11 @@ footer .coded-by-me-statement {
 }
 
 footer .coded-by-me-statement a:visited {
-  /* color: rgb(84, 54, 19); */
   color: black;
   font-weight: bold;
 }
 
 @media (max-width: 960px) {
-  /* header{
-    padding: 120px 0;
-  } */
-
   header h1 {
     font-size: 48px;
     line-height: 1;
